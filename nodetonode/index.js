@@ -9,7 +9,7 @@ const HOST = '0.0.0.0';
 const app = express();
 
 function callApi() {
-    var req = unirest("GET", "http://nodetonodeapp");
+    var req = unirest("GET", "http://" + process.env.HOST_NAME);
 
     req.end(function (res) {
         if (res.error) throw new Error(res.error);
