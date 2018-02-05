@@ -9,7 +9,7 @@ const HOST = 'localhost';
 const app = express();
 
 function callApi() {
-    var req = unirest("GET", "http://172.16.19.43/demo");
+    var req = unirest("GET", "http://172.16.19.43:8080/demo");
 
     req.end(function (res) {
         if (res.error) throw new Error(res.error);
