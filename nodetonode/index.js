@@ -9,11 +9,12 @@ const HOST = '0.0.0.0';
 const app = express();
 
 function callApi() {
-    var req = unirest("GET", "http://nodetonodeapp-nodetonodeapp.apps.sodigital.io");
+    var req = unirest("GET", "hostname");
 
     req.end(function (res) {
         if (res.error) throw new Error(res.error);
         console.log(res.body);
+        
     });
 }
 console.log('calling API-->');
