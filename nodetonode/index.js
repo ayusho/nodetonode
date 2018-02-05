@@ -3,7 +3,7 @@ var unirest = require("unirest");
 
 // Constants
 const PORT = 3001;
-const HOST = '10.224.22.206';
+const HOST = 'localhost';
 
 // App
 const app = express();
