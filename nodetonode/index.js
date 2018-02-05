@@ -9,11 +9,12 @@ const HOST = '0.0.0.0';
 const app = express();
 
 function callApi() {
-    var req = unirest("GET", "hostname");
+    var req = unirest("GET", process.env.HOST_NAME);
 
     req.end(function (res) {
         if (res.error) throw new Error(res.error);
         console.log(res.body);
+        console.log(process.env.NODEJS_VERSION);
         
     });
 }
