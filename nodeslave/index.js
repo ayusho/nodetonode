@@ -6,7 +6,7 @@ const HOST = 'localhost';
 
 // App
 const app = express();
-app.get('/demo', (req, res) => {
+app.get('/', (req, res) => {
     console.log('hit')
    res.send('Running on server port 3004\n');
 });
