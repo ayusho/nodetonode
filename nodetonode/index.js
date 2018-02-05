@@ -9,14 +9,14 @@ const HOST = '10.224.22.206';
 const app = express();
 
 function callApi() {
-    var req = unirest("GET", "http://10.224.22.206:3004/demo");
+    var req = unirest("GET", "http://nodetonodeapp/demo");
 
     req.end(function (res) {
         if (res.error) throw new Error(res.error);
         console.log(res.body);
     });
 }
-console.log('hello')
+console.log('calling API-->');
 callApi();
 
 
