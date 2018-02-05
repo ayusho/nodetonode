@@ -9,7 +9,7 @@ const HOST = 'localhost';
 const app = express();
 
 function callApi() {
-    var req = unirest("GET", "http://nodetonodeapp/demo");
+    var req = unirest("GET", "http://nodetonodeapp.nodetonodeapp.svc/demo");
 
     req.end(function (res) {
         if (res.error) throw new Error(res.error);
