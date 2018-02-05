@@ -17,7 +17,7 @@ function callApi() {
         
     });
 }
-console.log('calling API-->');
+console.log('calling API-->' + process.env.HOST_NAME);
 callApi();
 
 
