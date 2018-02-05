@@ -2,8 +2,8 @@ const express = require('express');
 var unirest = require("unirest");
 
 // Constants
-const PORT = 8080;
-const HOST = 'localhost';
+const PORT = 3001;
+const HOST = '0.0.0.0';
 
 // App
 const app = express();
